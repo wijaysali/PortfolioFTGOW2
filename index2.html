@@ -27,31 +27,31 @@
                 </div>
             </div>
             <div class="description">
-                <h1>Nama Anda</h1>
-                <p>Front End Designer</p>
-                <a href="#" class="button bg-blue">Kontak</a>
+                <h1 id="pName">Nama Anda</h1>
+                <p id="pRole">Front End Designer</p>
+                <a href="#input_form" class="button bg-blue" onclick="editForm()">Edit</a>
                 <a href="#" class="button border-green">Resume</a>
             </div>
             <div class="information">
                 <div class="data">
                     <p class="field">Availability</p>
-                    <p class="text-gray">Full Time</p>
+                    <p id="pAvailable" class="text-gray">Full Time</p>
                 </div>
                 <div class="data">
                     <p class="field">Usia</p>
-                    <p class="text-gray">19</p>
+                    <p id="pAge" class="text-gray">19</p>
                 </div>
                 <div class="data">
                     <p class="field">Lokasi</p>
-                    <p class="text-gray">Jakarta</p>
+                    <p id="pLocation" class="text-gray">Jakarta</p>
                 </div>
                 <div class="data">
                     <p class="field">Pengalaman</p>
-                    <p class="text-gray">2 Tahun</p>
+                    <p id="pExperience" class="text-gray">2 Tahun</p>
                 </div>
                 <div class="data">
                     <p class="field">Email</p>
-                    <p class="text-gray">email@gmail.com</p>
+                    <p id="pEmail" class="text-gray">email@gmail.com</p>
                 </div>
             </div>
         </section>
@@ -89,6 +89,22 @@
                 <div class="form">
                     <input type="submit" name="submit" value="SUBMIT" class="bg-green">
                 </div>
+
+                <script>
+                    var formMenu = document.getElementById("input-form");
+                    formMenu.style.display="none"
+
+                    function editForm(){
+                        if(formMenu.style.display === "none"){
+                            formMenu.style.display = "block";
+                        } else {
+                            formMenu.style.display = "none";
+                        }
+                    }
+
+                </script>
+
+
             </form>            
         </section>
     </body>
